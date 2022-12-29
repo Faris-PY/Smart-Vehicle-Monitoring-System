@@ -2,6 +2,7 @@
 Azure Data Engineering
 
 This Project gives insight into efficient Monitoring of Vehicle using Azure.
+![Architecture diagram](https://user-images.githubusercontent.com/107489749/209940216-e9e32d59-2864-4dbe-a351-7759cdfa914d.png)
 
 ## Resources used 
 
