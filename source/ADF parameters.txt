@@ -1,0 +1,20 @@
+AmazonS3 -> ADLS
+
+Source dataset
+-------------- 
+
+Added parameter
+---------------
+	folderpath -> @concat(formatDateTime(utcnow(), 'yyyy'), '/', formatDateTime(utcnow(), 'MM'), '/', formatDateTime(utcnow(), 'dd'), '/')
+
+File path  -> vehicleGPSdata / @dataset().folderpath 
+
+
+Sink dataset
+-------------- 
+Added parameter
+---------------
+	landingFolder -> @concat('LandingFolder/', formatDateTime(utcnow(), 'yyyy'), '/', formatDateTime(utcnow(), 'MM'), '/', formatDateTime(utcnow(), 'dd'), '/')
+	
+
+Filepath -> input / @dataset().landingFolder
